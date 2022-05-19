@@ -8,9 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="calculatorBody">
+        <table>
+            <tr>
+                <td><input type="text" id="myResult"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="C" onclick="deleteMe()"></td>
+                <td><input type="button" value="(" onclick="calculator('(')"></td>
+                <td><input type="button" value=")" onclick="calculator (')')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="calculator('7')"></td>
+                <td><input type="button" value="8" onclick="calculator('8')"></td>
+                <td><input type="button" value="9" onclick="calculator('9')"></td>
+                <td><input type="button" value="+" onclick="calculator('+')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" onclick="calculator('4')"></td>
+                <td><input type="button" value="5" onclick="calculator('5')"></td>
+                <td><input type="button" value="6" onclick="calculator('6')"></td>
+                <td><input type="button" value="-" onclick="calculator('-')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="1" onclick="calculator('1')"></td>
+                <td><input type="button" value="2" onclick="calculator('2')"></td>
+                <td><input type="button" value="3" onclick="calculator('3')"></td>
+                <td><input type="button" value="*" onclick="calculator('*')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="0" onclick="calculator('0')"></td>
+                <td><input type="button" value="." onclick="calculator('.')"></td>
+                <td><input type="button" value="/" onclick="calculator('/')"></td>
+                <td><input type="button" value="=" onclick="answer()"></td>
+            </tr>
+        </table>
+    </div>
 
 
-    
     <script src="script.js"></script>
 </body>
 </html>
